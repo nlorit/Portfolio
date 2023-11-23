@@ -1,0 +1,5 @@
+#A9CEF4 Light blue
+#36494E darker blue
+#000000 black
+#7EA0B7 Lighter blue
+#597081 Soft darker blue
