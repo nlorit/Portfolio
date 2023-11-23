@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap');
+
+
 .App {
   --lightblue : #A9CEF4;
   --darkerblue : #36494E;
   --black : #000000;
   --lighterblue : #7EA0B7;
   --softdarkerblue : #597081;
-
+  background: var(--black);
+  color: white;
+  font-family: "Rubik";
 }
 
 
@@ -12,6 +17,7 @@
 .main-div-footer {
   background-color: var(--darkerblue);
   color: #fff;
+  font-family: "Rubik";
 }
 
 .logo-div-footer {
@@ -54,4 +60,33 @@
   margin-top: 10px;
   color: white;
   text-decoration: none;
+}
+
+.active {
+  background-color: var(--darkerblue);
+}
+
+.main-div-header img {
+  z-index: 2;
+  visibility: hidden;
+  margin-bottom: 100px;
+  
+}
+
+.main-div-header h1 {
+  text-align: center;
+  z-index: 0;
+  position:relative
+}
+
+.main-div-header {
+
+}
+
+.first-h1-header {
+  font: 200;
+}
+
+.second-h1-header {
+  
 }
