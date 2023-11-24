@@ -1,0 +1,112 @@
+.main_div_footer {
+    color: white;
+    font-family: "Rubik";
+}
+
+.logo_div_footer {
+    display: flex;
+    justify-content: center;
+}
+
+.logo_div_footer img {
+    padding: 10px;
+    background-color: white;
+}
+
+.links_div_footer {
+    display: flex;
+    justify-content: center;
+}
+
+.links_div_footer a {
+    padding: 10px;
+}
+
+.main_copyrights_div_footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.dash_copyrights_footer {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.main_div_header img {
+    z-index: 2;
+    visibility: hidden;
+    margin-bottom: 100px;
+
+}
+
+.main_div_header h1 {
+    text-align: center;
+    z-index: 0;
+    position: relative
+}
+
+.main_div_header {}
+
+.first_h1_header {
+    font: 200;
+}
+
+.second_h1_header {}
+
+.logo_div_navbar img {
+    height: 30px;
+    background-color: white;
+}
+
+.main_div_navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.links_div_navbar a {
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.button_div_navbar button {
+    border: none;
+    margin-top: 4px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    margin-left: 10px;
+}
+
+.button_div_navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik';
+    font-weight: bold;
+
+}
+
+.button_div_navbar a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
+.right_div_navbar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Active class a faire pour la page actuelle */
+
+a:hover {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
