@@ -1,21 +1,22 @@
-import icon from "../images/placeholder.png"
+import icon from "../../images/placeholder.png"
+
 export default function Navbar() {
     return (
         <nav>
-            <div className="main-div-navbar">
-                <div className="logo-div-navbar">
+            <div className="main_div_navbar">
+                <div className="logo_div_navbar">
                     <a href="/">
                         <img src={icon} />
                     </a>
                 </div>
 
-                <div className="links-div-navbar">
+                <div className="links_div_navbar">
                     <a href="/">Home</a>
                     <a href="/project">My projects</a>
                     <a href="/about">About me</a>
                 </div>
 
-                <div className = "button-div-navbar">
+                <div className = "button_div_navbar">
                     <button>
                         <a href ="/about">
                             Contact

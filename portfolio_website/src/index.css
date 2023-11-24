@@ -5,9 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --lightblue : #A9CEF4;
+  --darkerblue : #36494E;
+  --black : #000000;
+  --lighterblue : #7EA0B7;
+  --softdarkerblue : #597081;
+  background: grey;
+  color: white;
+  font-family: "Rubik";
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap');
+
+
