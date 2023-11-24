@@ -1,4 +1,4 @@
-import icon from "../../images/placeholder.png"
+import icon from "../../images/logo512.png"
 
 export default function Navbar() {
     return (
