@@ -9,19 +9,20 @@ export default function Navbar() {
                         <img src={icon} />
                     </a>
                 </div>
+                <div className="right_div_navbar">
+                    <div className="links_div_navbar">
+                        <a className="active" href="/">Home</a>
+                        <a href="/project">My projects</a>
+                        <a href="/about">About me</a>
+                    </div>
 
-                <div className="links_div_navbar">
-                    <a href="/">Home</a>
-                    <a href="/project">My projects</a>
-                    <a href="/about">About me</a>
-                </div>
-
-                <div className = "button_div_navbar">
-                    <button>
-                        <a href ="/about">
-                            Contact
-                        </a>
-                    </button>
+                    <div className="button_div_navbar">
+                        <button>
+                            <a href="/about">
+                                Contact
+                            </a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
