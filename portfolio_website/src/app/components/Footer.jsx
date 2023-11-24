@@ -1,4 +1,5 @@
-import icon from "../../images/placeholder.png"
+import icon from "../images/placeholder.png"
+
 export default function Footer() {
     return (
         <div className="main-div-footer">

@@ -62,9 +62,6 @@
   text-decoration: none;
 }
 
-.active {
-  background-color: var(--darkerblue);
-}
 
 .main-div-header img {
   z-index: 2;
@@ -89,4 +86,14 @@
 
 .second-h1-header {
   
+}
+
+.button-div-navbar button{
+ 
+  background-color: var(--darkerblue);
+}
+
+.button-div-navbar a{
+  text-decoration: none;
+  background-color: var(--darkerblue);
 }

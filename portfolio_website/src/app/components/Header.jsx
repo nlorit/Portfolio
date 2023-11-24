@@ -1,4 +1,4 @@
-import profile from "../../images/profile.png"
+import profile from "../images/profile.png"
 
 export default function Header() {
   return (
