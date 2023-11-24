@@ -11,7 +11,12 @@ body {
   --black : #000000;
   --lighterblue : #7EA0B7;
   --softdarkerblue : #597081;
-  background: grey;
+
+  --background-color : #0b0f1c;
+  --accent-color : #a6f634;
+  --text-alt-color : #222326;
+
+  background: var(--background-color);
   color: white;
   font-family: "Rubik";
 }

@@ -56,12 +56,14 @@
 
   .logo_div_navbar img{
     height: 30px;
+    background-color: white;
   }
   
   .main_div_navbar {
-    background-color: var(--lighterblue);
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
   }
   
   .links_div_navbar a {
@@ -72,11 +74,15 @@
   }
   
   .button_div_navbar button{
-   
-    background-color: var(--darkerblue);
+    border: none;
+    margin-top: 4px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
   }
   
   .button_div_navbar a{
     text-decoration: none;
-    background-color: var(--darkerblue);
+    color: black;
+    font-family: 'Rubik';
   }
