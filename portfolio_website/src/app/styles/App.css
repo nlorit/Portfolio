@@ -5,6 +5,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    margin-top: 100px;
 }
 
 .logo_div_footer {
@@ -66,9 +67,26 @@
 
 .main_div_header img {
     z-index: 2;
-    width: 700px;
+    width: 600px;
     margin-top: -400px;
+    filter: drop-shadow(0px 0px 5px rgb(35, 35, 35));
 
+}
+
+@media (max-width: 600px) {
+    .main_div_header img {
+        width: 100%; /* Adjust the width for smaller screens */
+        margin-top: -200px; /* Adjust the margin for overlap on smaller screens */
+    }
+    .main_div_header h1 {
+        position: relative;
+        z-index: 1; /* Lower z-index for the h1 */
+        color: var(--text-alt-color);
+        font-family: "Rubik";
+        font-weight: bolder;
+        text-align: center;
+        width: 300px;
+    }
 }
 
 .main_div_header h1 {
@@ -76,9 +94,8 @@
     z-index: 1; /* Lower z-index for the h1 */
     color: var(--text-alt-color);
     font-family: "Rubik";
-    font-weight: bolder;
     text-align: center;
-    width: 100%;
+    width: 600px;
     font-size: 100px;
 }
 
@@ -109,6 +126,7 @@
     left: 0;
     right: 0;
     z-index: 100; /* Adjust the z-index as needed */
+    width: 100%;
 }
 
 .links_div_navbar a {
