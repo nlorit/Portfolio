@@ -1,6 +1,10 @@
 .main_div_footer {
     color: white;
+    position: absolute;
     font-family: "Rubik";
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .logo_div_footer {
@@ -8,9 +12,10 @@
     justify-content: center;
 }
 
-.logo_div_footer img {
+.logo_div_footer svg {
     padding: 10px;
-    background-color: white;
+    height: 20px;
+    fill: var(--accent-color);
 }
 
 .links_div_footer {
@@ -22,10 +27,19 @@
     padding: 10px;
 }
 
+.separator_div_footer {
+    border-color: var(--accent-color);
+    width: 50%;
+}
+
 .main_copyrights_div_footer {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.main_copyrights_div_footer h4 {
+    font-weight: 600;
 }
 
 .dash_copyrights_footer {
@@ -36,24 +50,43 @@
 
 .main_div_header img {
     z-index: 2;
-    visibility: hidden;
+    width: 100%;
     margin-bottom: 100px;
 
 }
 
-.main_div_header h1 {
-    text-align: center;
-    z-index: 0;
-    position: relative
+
+.main_div_header {
+    position: relative;
 }
 
-.main_div_header {}
-
-.first_h1_header {
-    font: 200;
+.main_div_header h1{
+    position: absolute;
+    top : 0;
+    left: 0;
+    z-index :1;
+    color : var(--text-alt-color);
+    font-family: "Rubik";
+    font-weight: bolder;
+    width: 100%;
+}
+.main_div_header img {
+    position: absolute;
+    top : 0;
+    left: 0;
+    z-index: 2;
 }
 
-.second_h1_header {}
+
+
+.dot1_header {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 15px 15px;
+    background-position: 0 0, 7.5px 7.5px;
+    z-index: 2;
+}
 
 .logo_div_navbar img {
     height: 30px;
@@ -65,6 +98,11 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
+    position: absolute;
+    top :0;
+    left: 0;
+    right: 0;
+
 }
 
 .links_div_navbar a {
@@ -109,4 +147,3 @@ a:hover {
     text-decoration: none;
     color: var(--accent-color);
 }
-
