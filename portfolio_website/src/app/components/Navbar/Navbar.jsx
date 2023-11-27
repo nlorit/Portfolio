@@ -38,7 +38,7 @@ export default function Navbar() {
                                 ></path>
                             </g>
                             <path
-                                fill="#040505"
+                                fill="#FFFFFF"
                                 strokeWidth="0"
                                 d="M235.58 4.36L294.58 34.36 294.58 308.36 411.58 247.36 412.31 309.19 235.36 400.36 235.58 4.36z"
                             ></path>
@@ -64,7 +64,7 @@ export default function Navbar() {
                                 ></path>
                             </g>
                             <path
-                                fill="#040505"
+                                fill="#FFFFFF"
                                 strokeWidth="0"
                                 d="M179.46 2.48L179.46 218.12 60.73 157.3 60.5 339.3 1.73 309.3 1.5 94.3 37.73 78.3 119 106.3 119 34.3 179.46 2.48z"
                             ></path>
