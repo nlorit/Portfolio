@@ -1,3 +1,4 @@
+/* Footer Styles */
 .main_div_footer {
     color: white;
     position: absolute;
@@ -5,7 +6,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin-top: 200px;
+    margin-top: 200px; /* Adjust margin as needed */
 }
 
 .logo_div_footer {
@@ -44,13 +45,38 @@
     margin-top: 0px;
 }
 
-.dash_copyrights_footer {
-    margin-left: 10px;
-    margin-right: 10px;
-    color: var(--accent-color);
+/* Responsive Footer for Small Screens */
+@media (max-width: 600px) {
+    .main_div_footer {
+        margin-top: 0; /* Adjust margin for smaller screens */
+    }
+
+    .main_copyrights_div_footer {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .main_copyrights_div_footer h4 {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .links_div_navbar {
+        display: none;
+    }
+
+    .button_menu_navbar svg {
+        fill: white;
+        padding-top: 5px;
+        padding-left: 25px;
+        display: block;
+        visibility: visible;
+    }
 }
 
-
+/* Header Styles */
 .main_div_header {
     position: relative;
     display: flex;
@@ -66,21 +92,18 @@
     width: 600px;
     margin-top: -400px;
     filter: drop-shadow(0px 0px 5px rgb(35, 35, 35));
-
 }
 
+/* Responsive Header for Small Screens */
 @media (max-width: 600px) {
     .main_div_header img {
         width: 100%;
-        /* Adjust the width for smaller screens */
         margin-top: -200px;
-        /* Adjust the margin for overlap on smaller screens */
     }
 
     .main_div_header h1 {
         position: relative;
         z-index: 1;
-        /* Lower z-index for the h1 */
         color: var(--text-alt-color);
         font-family: "Rubik";
         font-weight: bolder;
@@ -93,8 +116,6 @@
         flex-wrap: nowrap;
         flex-direction: column;
         margin-bottom: 15px;
-
-
     }
 
     .main_copyrights_div_footer h4 {
@@ -102,17 +123,15 @@
         margin-bottom: 1px;
     }
 
-
     .links_div_navbar {
         display: none;
     }
-
 
     .button_menu_navbar svg {
         fill: white;
         padding-top: 5px;
         padding-left: 25px;
-        display: block; /* Display the menu button */
+        display: block;
         visibility: visible;
     }
 }
@@ -120,7 +139,6 @@
 .main_div_header h1 {
     position: relative;
     z-index: 1;
-    /* Lower z-index for the h1 */
     color: var(--text-alt-color);
     font-family: "Rubik";
     text-align: center;
@@ -128,9 +146,7 @@
     font-size: 100px;
 }
 
-
-
-
+/* Other Styles */
 .dot1_header {
     width: 100%;
     height: 100%;
@@ -151,12 +167,10 @@
     align-items: center;
     margin-top: 10px;
     position: fixed;
-    /* Use fixed instead of absolute for a fixed navbar */
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    /* Adjust the z-index as needed */
     width: 100%;
 }
 
@@ -181,13 +195,11 @@
     color: black;
     font-family: 'Rubik';
     font-weight: bold;
-
 }
 
 .button_div_navbar a:hover {
     text-decoration: none;
     color: black;
-
 }
 
 .right_div_navbar {
@@ -196,118 +208,101 @@
     margin-right: 20px;
 }
 
-/* Active class a faire pour la page actuelle */
-
+/* Active class styling for links on hover */
 a:hover {
     text-decoration: none;
     color: var(--accent-color);
 }
 
-
-
+/* Hamburger menu button styles */
 .vbp-header-menu-button__svg {
     width: 30px;
     height: 30px;
-
+    margin-left: 30px;
     cursor: pointer;
     transform: scaleX(-1);
-  }
-  
-  .vbp-header-menu-button__svg line {
+    display: none;
+}
+
+.vbp-header-menu-button__svg line {
     stroke: #ffffff;
     stroke-dasharray: 100%;
     stroke-dashoffset: 0%;
     transition: transform 0.3s, stroke-dashoffset .4s;
     transform-origin: center;
     stroke-width: 3px;
-  }
-  
-  .vbp-header-menu-button__svg .top {
+}
+
+.vbp-header-menu-button__svg .top {
     transform: translateY(-35%);
-    -webkit-transform: translateY(-35%);
-    -moz-transform: translateY(35%);
-    -ms-transform: translateY(35%);
-    -o-transform: translateY(35%);
-  }
-  
-  .vbp-header-menu-button__svg .middle {
+}
+
+.vbp-header-menu-button__svg .middle {
     transform: scaleX(1);
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
     transition: opacity .3s, transform .3s;
-    -webkit-transition: opacity .3s, transform .3s;
-    -moz-transition: opacity .3s, transform .3s;
-    -ms-transition: opacity .3s, transform .3s;
-    -o-transition: opacity .3s, transform .3s;
-  
-  }
-  
-  .vbp-header-menu-button__svg .bottom {
+}
+
+.vbp-header-menu-button__svg .bottom {
     transform: translateY(33%);
-    -webkit-transform: translateY(33%);
-    -moz-transform: translateY(33%);
-    -ms-transform: translateY(33%);
-    -o-transform: translateY(33%);
     stroke-dasharray: 100%;
     stroke-dashoffset: 9px;
-  }
-  .vbp-header-menu-button__svg:hover .bottom {
-    stroke-dashoffset: 0%;
-  }
-  /*** Mode Croix ***/
-  body.menu-open .vbp-header-menu-button__svg .top {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    stroke-linecap: round;
-  }
-  
-  body.menu-open .vbp-header-menu-button__svg .middle {
-    transform: scaleX(0.1);
-    -webkit-transform: scaleX(0.1);
-    -moz-transform: scaleX(0.1);
-    -ms-transform: scaleX(0.1);
-    -o-transform: scaleX(0.1);
-    opacity: 0;
-  }
-  
-  body.menu-open .vbp-header-menu-button__svg line.bottom {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    stroke-linecap: round;
-  }
-  
-  body.menu-open .vbp-header-menu-button__svg .bottom {
-    stroke-dashoffset: 0%;
-  }
+}
 
-  .overlay-menu {
+.vbp-header-menu-button__svg:hover .bottom {
+    stroke-dashoffset: 0%;
+}
+
+/* Cross Mode */
+body.menu-open .vbp-header-menu-button__svg .top {
+    transform: rotate(45deg);
+    stroke-linecap: round;
+}
+
+body.menu-open .vbp-header-menu-button__svg .middle {
+    transform: scaleX(0.1);
+    opacity: 0;
+}
+
+body.menu-open .vbp-header-menu-button__svg line.bottom {
+    transform: rotate(-45deg);
+    stroke-linecap: round;
+}
+
+body.menu-open .vbp-header-menu-button__svg .bottom {
+    stroke-dashoffset: 0%;
+}
+  
+.overlay-menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--background-color); /* Semi-transparent black overlay */
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 1000; /* Ensure it appears above other content */
-    color: white; /* Text color */
-    
+    z-index: 1000;
+    color: white;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.5s ease; /* Add a smooth transition effect */
+}
 
-  }
-  
-  .overlay-menu a {
+.overlay-menu.show {
+    opacity: 1; /* Change opacity to 1 when the 'show' class is applied */
+}
+
+.overlay-menu a {
     margin: 15px;
     text-decoration: none;
     color: white;
     font-size: 18px;
-  }
+}
+
+.overlay-link:hover {
+    color: var(--accent-color);
+    transform: scale(1.1, 1.1); /* Adjust the scaling factor as needed */
+    transition: 0.3s;
+}
+

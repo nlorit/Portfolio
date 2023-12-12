@@ -112,7 +112,7 @@ export default function Navbar() {
                                     x2="100%"
                                     y2="50%"
                                     className={`top ${isMenuOpen ? 'open' : ''}`}
-                                    shape-rendering="crispEdges"
+                                    shapeRendering="crispEdges"
                                 />
                                 <line
                                     x1="0"
@@ -120,7 +120,7 @@ export default function Navbar() {
                                     x2="100%"
                                     y2="50%"
                                     className={`middle ${isMenuOpen ? 'open' : ''}`}
-                                    shape-rendering="crispEdges"
+                                    shapeRendering="crispEdges"
                                 />
                                 <line
                                     x1="0"
@@ -128,7 +128,7 @@ export default function Navbar() {
                                     x2="100%"
                                     y2="50%"
                                     className={`bottom ${isMenuOpen ? 'open' : ''}`}
-                                    shape-rendering="crispEdges"
+                                    shapeRendering="crispEdges"
                                 />
                             </svg>
                         </div>
@@ -137,13 +137,14 @@ export default function Navbar() {
             </nav>
 
             {isMenuOpen && (
-                <div className="overlay-menu">
+                <div className={`overlay-menu ${isMenuOpen ? 'show' : ''}`}>
                     {/* Your overlay menu content goes here */}
-                    <a href="/">Home</a>
-                    <a href="/project">My projects</a>
-                    <a href="/about">About me</a>
-                    <a href="/about">Contact</a>
+                    <a className="overlay-link" href="/">Home</a>
+                    <a className="overlay-link" href="/project">My projects</a>
+                    <a className="overlay-link" href="/about">About me</a>
+                    <a className="overlay-link" href="/about">Contact</a>
                 </div>
+
             )}
         </>
     );
