@@ -23,9 +23,7 @@ export default function Footer() {
             </div>
             <hr className="separator_div_footer"/>
             <div className="main_copyrights_div_footer">
-                <h4>Copyrights © 2024</h4>
-                <h4 className="dash_copyrights_footer"> - </h4>
-                <h4>Designed by Nathan LORIT</h4>
+                <h4>&copy; 2024 Nathan LORIT <br/> All rights reserved.</h4>
             </div>
 
         </div>
