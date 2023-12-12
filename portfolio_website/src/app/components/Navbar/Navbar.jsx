@@ -94,6 +94,16 @@ export default function Navbar() {
                             </a>
                         </button>
                     </div>
+
+                    <div className="button_menu_navbar">
+                        <svg viewBox="0 0 100 80" width="40" height="40" color="white">
+                            <rect width="100" height="20"rx="8px"></rect>
+                            <rect y="30" width="100" height="20" rx="8px"></rect>
+                            <rect y="60" width="100" height="20"rx="8px"></rect>
+                        </svg>
+                    </div>
+
+
                 </div>
             </div>
         </nav>

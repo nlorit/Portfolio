@@ -5,7 +5,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .logo_div_footer {
@@ -41,6 +41,7 @@
 
 .main_copyrights_div_footer h4 {
     font-weight: 600;
+    margin-top: 0px;
 }
 
 .dash_copyrights_footer {
@@ -70,23 +71,54 @@
 
 @media (max-width: 600px) {
     .main_div_header img {
-        width: 100%; /* Adjust the width for smaller screens */
-        margin-top: -200px; /* Adjust the margin for overlap on smaller screens */
+        width: 100%;
+        /* Adjust the width for smaller screens */
+        margin-top: -200px;
+        /* Adjust the margin for overlap on smaller screens */
     }
+
     .main_div_header h1 {
         position: relative;
-        z-index: 1; /* Lower z-index for the h1 */
+        z-index: 1;
+        /* Lower z-index for the h1 */
         color: var(--text-alt-color);
         font-family: "Rubik";
         font-weight: bolder;
         text-align: center;
         width: 300px;
     }
+
+    .main_copyrights_div_footer {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+
+    }
+
+    .main_copyrights_div_footer h4 {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+
+    .links_div_navbar {
+        content-visibility: hidden;
+    }
+
+
+    .button_menu_navbar svg {
+        fill: white;
+        padding: 10px;
+        content-visibility: visible ;
+    }
 }
 
 .main_div_header h1 {
     position: relative;
-    z-index: 1; /* Lower z-index for the h1 */
+    z-index: 1;
+    /* Lower z-index for the h1 */
     color: var(--text-alt-color);
     font-family: "Rubik";
     text-align: center;
@@ -116,11 +148,13 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-    position: fixed; /* Use fixed instead of absolute for a fixed navbar */
+    position: fixed;
+    /* Use fixed instead of absolute for a fixed navbar */
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100; /* Adjust the z-index as needed */
+    z-index: 100;
+    /* Adjust the z-index as needed */
     width: 100%;
 }
 
@@ -165,4 +199,11 @@
 a:hover {
     text-decoration: none;
     color: var(--accent-color);
+}
+
+
+.button_menu_navbar svg {
+    fill: white;
+    content-visibility: hidden;
+    /* display: none; */
 }
