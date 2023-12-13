@@ -1,6 +1,3 @@
-import icon from "../../images/placeholder.png"
-
-
 
 export default function Footer() {
     return (
