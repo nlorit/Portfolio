@@ -1,13 +1,9 @@
 /* Footer Styles */
 .main_div_footer {
     color: white;
-    position: fixed;
     font-family: "Rubik";
     /* bottom: 0; */
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-top: 400px; /* Adjust margin as needed */
+
 }
 
 .logo_div_footer {
@@ -404,6 +400,6 @@ body {
     
 
 .div_skills {
-    width: 70vh;
+    width: 100%;
 }
 
