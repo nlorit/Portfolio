@@ -1,11 +1,12 @@
 /* Footer Styles */
 .main_div_footer {
     color: white;
-    position: absolute;
+    position: fixed;
     font-family: "Rubik";
     /* bottom: 0; */
     left: 0;
     right: 0;
+    bottom: 0;
     margin-top: 400px; /* Adjust margin as needed */
 }
 
@@ -77,21 +78,19 @@
 
 /* Header Styles */
 .main_div_header {
-    position: relative;
+    position: fixed;
     display: flex;
+    width: 80%;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    text-align: justify ;
+
 }
 
-.main_div_header img {
-    z-index: 2;
-    width: 600px;
-    margin-top: -400px;
-    filter: drop-shadow(0px 0px 5px rgb(35, 35, 35));
-}
 
 /* Responsive Header for Small Screens */
 @media (max-width: 600px) {
@@ -107,7 +106,7 @@
         font-family: "Rubik";
         font-weight: bolder;
         text-align: center;
-        width: 300px;
+        width: 100%;
     }
 
     .main_copyrights_div_footer {
@@ -139,9 +138,9 @@
     z-index: 1;
     color: #c4c4c4;
     font-family: "Rubik";
-    text-align: center;
-    width: 600px;
-    font-size: 100px;
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
 }
 
 
@@ -399,6 +398,12 @@ body {
    }
       }
   
-  
-  
-  
+.div_skills svg {
+    width: 100px;
+}
+    
+
+.div_skills {
+    width: 70vh;
+}
+

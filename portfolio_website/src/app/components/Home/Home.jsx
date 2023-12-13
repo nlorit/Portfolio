@@ -7,11 +7,11 @@ export default function Home() {
         <div className="full-height">
             <div className="div_background">
                 <svg version="1.1" id="home-anim" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 1820 1080" style={{ background: "new 0 0 1820 1080", height :"100%", }} xmlSpace="preserve">
+                    viewBox="0 0 4820 1080" style={{ background: "new 0 0 4820 4820", height :"100%",  }} xmlSpace="preserve">
 
-                    <g id="home">
+                    <g id="home" width="100%" height="100%">
                         <defs>
-                            <rect id="masque" y="0.4" width="1920" height="1080" />
+                            <rect id="masque" y="0.4" width="100%" height="100%" />
                         </defs>
                         <clipPath id="cache">
                             <use xlinkHref="#masque" style={{ overflow: "visible" }} />
@@ -47,6 +47,8 @@ export default function Home() {
                             <line x1="821" y1="479.4" x2="975.5" y2="324.9" />
                             <line x1="1029.7" y1="113.6" x2="875.2" y2="268.2" />
                             <line x1="1257.1" y1="43.3" x2="1411.6" y2="-111.2" />
+                            
+                            
                         </g>
                         <g id="red">
                             <line x1="794.4" y1="883.4" x2="639.8" y2="1037.9" />
