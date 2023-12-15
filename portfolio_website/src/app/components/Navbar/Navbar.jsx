@@ -136,16 +136,15 @@ export default function Navbar() {
                 </div>
             </nav>
 
-            {isMenuOpen && (
-                <div className={`overlay-menu ${isMenuOpen ? 'show' : ''}`}>
-                    {/* Your overlay menu content goes here */}
-                    <a className="overlay-link" href="/">Home</a>
-                    <a className="overlay-link" href="/project">My projects</a>
-                    <a className="overlay-link" href="/about">About me</a>
-                    <a className="overlay-link" href="/about">Contact</a>
-                </div>
+            <div className={`overlay-menu ${isMenuOpen ? 'show' : ''}`}>
+                {/* Your overlay menu content goes here */}
+                <a className="overlay-link" href="/">Home</a>
+                <a className="overlay-link" href="/project">My projects</a>
+                <a className="overlay-link" href="/about">About me</a>
+                <a className="overlay-link" href="/about">Contact</a>
+            </div>
 
-            )}
+            
         </>
     );
 }

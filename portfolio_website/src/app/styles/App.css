@@ -72,7 +72,7 @@
     width: 80%;
     align-items: center;
     flex-direction: column;
-    margin: 80px 10% 20px;
+    margin: 100px 10% 20px;
     text-align: justify;
 }
 
@@ -132,6 +132,7 @@
     z-index: 100;
     width: 100%;
     background: var(--background-color);
+    border-bottom: grey solid 3px;
 }
 
 .links_div_navbar a {
@@ -214,22 +215,22 @@ a:hover {
 }
 
 /* Cross Mode */
-body.menu-open .vbp-header-menu-button__svg .top {
+.nav.menu-open .vbp-header-menu-button__svg .top {
     transform: rotate(45deg);
     stroke-linecap: round;
 }
 
-body.menu-open .vbp-header-menu-button__svg .middle {
+.nav.menu-open .vbp-header-menu-button__svg .middle {
     transform: scaleX(0.1);
     opacity: 0;
 }
 
-body.menu-open .vbp-header-menu-button__svg line.bottom {
+.nav.menu-open .vbp-header-menu-button__svg .bottom {
     transform: rotate(-45deg);
     stroke-linecap: round;
 }
 
-body.menu-open .vbp-header-menu-button__svg .bottom {
+.nav.menu-open .vbp-header-menu-button__svg .bottom {
     stroke-dashoffset: 0%;
 }
 
@@ -238,20 +239,25 @@ body.menu-open .vbp-header-menu-button__svg .bottom {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 20%;
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    z-index: 1000;
+    justify-content: flex-start;
+    z-index: 90;
     color: white;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    transform: translateY(-100%);
+    transition: 0.5s ease-in-out;
+    
 }
 
 .overlay-menu.show {
     opacity: 1;
+    transform: translateY(0);
 }
 
 .overlay-menu a {
@@ -369,3 +375,4 @@ body {
 .div_skills {
     width: 100%;
 }
+
