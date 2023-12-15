@@ -17,5 +17,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--background-color);
   color: white;
-  font-family: "Rubik";
+  fontFamily: "Rubik";
 }
