@@ -10,7 +10,8 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
@@ -18,9 +19,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "prefer_related_applications": true
+  "theme_color": "#a6f634",
+  "background_color": "#0b0f1c",
+  "prefer_related_applications": true,
+  "splash_pages": null
 }
