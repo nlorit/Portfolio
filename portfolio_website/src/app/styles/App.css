@@ -3,7 +3,6 @@
     color: white;
     font-family: "Rubik";
     /* bottom: 0; */
-
 }
 
 .logo_div_footer {
@@ -55,11 +54,6 @@
         margin-bottom: 15px;
     }
 
-    .main_copyrights_div_footer h4 {
-        margin-top: 1px;
-        margin-bottom: 1px;
-    }
-
     .links_div_navbar {
         display: none;
     }
@@ -84,9 +78,7 @@
     margin-right: 10%;
     margin-bottom: 20px;
     text-align: justify ;
-
 }
-
 
 /* Responsive Header for Small Screens */
 @media (max-width: 600px) {
@@ -103,18 +95,6 @@
         font-weight: bolder;
         text-align: center;
         width: 100%;
-    }
-
-    .main_copyrights_div_footer {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        margin-bottom: 15px;
-    }
-
-    .main_copyrights_div_footer h4 {
-        margin-top: 1px;
-        margin-bottom: 1px;
     }
 
     .links_div_navbar {
@@ -139,11 +119,9 @@
     font-size: 30px;
 }
 
-
 .logo_div_navbar svg {
     height: 20%;
     margin-top : 10px;
-    
 }
 
 .main_div_navbar {
@@ -294,8 +272,6 @@ body.menu-open .vbp-header-menu-button__svg .bottom {
     transition: 0.3s;
 }
 
-
-
 .main_div_about {
     position: relative;
     display: flex;
@@ -312,8 +288,7 @@ body.menu-open .vbp-header-menu-button__svg .bottom {
     text-align: justify;
 }
 
-
-html,
+.html,
 body {
     height: 100%;
     margin: 0;
@@ -338,7 +313,7 @@ body {
     z-index: 1;
 }
 
-  #red {
+#red {
     fill: none;
     opacity: 0.15;
     stroke: var(--accent-color);
@@ -348,9 +323,9 @@ body {
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out; 
-  }
-  
-  #blue {
+}
+
+#blue {
     fill: none;
     opacity: 0.15;
     stroke: #ffffff;
@@ -360,9 +335,9 @@ body {
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-  }
-  
-  #light-blue {
+}
+
+#light-blue {
     fill: none;
     opacity: 0.15;
     stroke: #06A1C4;
@@ -374,15 +349,15 @@ body {
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;    
-  }
-  
-  @keyframes draw {
+}
+
+@keyframes draw {
     to {
       stroke-dashoffset: 0;
    }
-      }
-  
-  @keyframes show {
+}
+
+@keyframes show {
     0% {
       opacity: 0.15;
    }
@@ -392,14 +367,12 @@ body {
     100% {
       opacity: 0.15;
    }
-      }
-  
+}
+
 .div_skills svg {
     width: 100px;
 }
-    
 
 .div_skills {
     width: 100%;
 }
-
