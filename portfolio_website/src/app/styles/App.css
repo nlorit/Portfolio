@@ -2,7 +2,6 @@
 .main_div_footer {
     color: white;
     font-family: "Rubik";
-    /* bottom: 0; */
 }
 
 .logo_div_footer {
@@ -44,7 +43,7 @@
 /* Responsive Footer for Small Screens */
 @media (max-width: 600px) {
     .main_div_footer {
-        margin-top: 0; /* Adjust margin for smaller screens */
+        margin-top: 0;
     }
 
     .main_copyrights_div_footer {
@@ -73,11 +72,8 @@
     width: 80%;
     align-items: center;
     flex-direction: column;
-    margin-top: 80px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 20px;
-    text-align: justify ;
+    margin: 80px 10% 20px;
+    text-align: justify;
 }
 
 /* Responsive Header for Small Screens */
@@ -121,15 +117,14 @@
 
 .logo_div_navbar svg {
     height: 20%;
-    margin-top : 10px;
+    margin-top: 10px;
 }
 
 .main_div_navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -237,7 +232,7 @@ body.menu-open .vbp-header-menu-button__svg line.bottom {
 body.menu-open .vbp-header-menu-button__svg .bottom {
     stroke-dashoffset: 0%;
 }
-  
+
 .overlay-menu {
     position: fixed;
     top: 0;
@@ -251,12 +246,12 @@ body.menu-open .vbp-header-menu-button__svg .bottom {
     justify-content: center;
     z-index: 1000;
     color: white;
-    opacity: 0; /* Set initial opacity to 0 */
-    transition: opacity 0.5s ease; /* Add a smooth transition effect */
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .overlay-menu.show {
-    opacity: 1; /* Change opacity to 1 when the 'show' class is applied */
+    opacity: 1;
 }
 
 .overlay-menu a {
@@ -268,19 +263,17 @@ body.menu-open .vbp-header-menu-button__svg .bottom {
 
 .overlay-link:hover {
     color: var(--accent-color);
-    transform: scale(1.1, 1.1); /* Adjust the scaling factor as needed */
+    transform: scale(1.1, 1.1);
     transition: 0.3s;
 }
 
 .main_div_about {
     position: relative;
     display: flex;
-    align-items: start;
-    padding-left: 10% ;
+    align-items: flex-start;
+    padding-left: 10%;
     flex-direction: column;
-    margin-top: 90px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 90px auto;
 }
 
 .div_content_about {
@@ -318,11 +311,11 @@ body {
     opacity: 0.15;
     stroke: var(--accent-color);
     stroke-width: 12;
-    stroke-miterlimit:10;
+    stroke-miterlimit: 10;
     animation: show 4s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out;
 }
 
 #blue {
@@ -330,7 +323,7 @@ body {
     opacity: 0.15;
     stroke: #ffffff;
     stroke-width: 12;
-    stroke-miterlimit:10;
+    stroke-miterlimit: 10;
     animation: show 4s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -342,31 +335,31 @@ body {
     opacity: 0.15;
     stroke: #06A1C4;
     stroke-width: 6;
-    stroke-miterlimit:10;
+    stroke-miterlimit: 10;
     stroke-dasharray: 200;
     stroke-dashoffset: 800;
     animation: draw 4s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;    
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes draw {
     to {
-      stroke-dashoffset: 0;
-   }
+        stroke-dashoffset: 0;
+    }
 }
 
 @keyframes show {
     0% {
-      opacity: 0.15;
-   }
+        opacity: 0.15;
+    }
     50% {
-      opacity: 0.2;
-   }
+        opacity: 0.2;
+    }
     100% {
-      opacity: 0.15;
-   }
+        opacity: 0.15;
+    }
 }
 
 .div_skills svg {
